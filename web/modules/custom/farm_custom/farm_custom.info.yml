@@ -1,0 +1,5 @@
+name: Custom Farm
+description: Custom farmOS module.
+type: module
+package: farmOS
+core_version_requirement: ^9
