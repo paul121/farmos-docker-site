@@ -12,16 +12,13 @@ RUN rm -r /opt/drupal /var/farmOS/* && chown www-data:www-data /var/farmOS
 WORKDIR /var/farmOS
 COPY --chown=www-data:www-data . .
 
-# Create composer cache with permissions for www-data.
-RUN composer config cache-dir $(mktemp -d) && chown -R www-data:www-data $(composer config cache-dir)
-
-# Install composer as the www-data user.
-USER www-data
+# Install composer.
+RUN composer config cache-dir $(mktemp -d)
 RUN composer install --no-dev
 RUN composer clear-cache
 
 # Copy codebase into /opt/drupal.
-USER root
+RUN chown -R www-data:www-data /var/farmOS/web/sites
 RUN cp -rp /var/farmOS /opt/drupal
 
 WORKDIR /opt/drupal
