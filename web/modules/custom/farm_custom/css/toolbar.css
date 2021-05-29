@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Style overrides for the toolbar.
+ */
+
+/* Decrease padding to make the logo bigger and fill more space. */
+.toolbar .toolbar-bar #toolbar-item-administration-tray .toolbar-logo {
+  padding: .75em 0;
+}
+
+/* Center the logo and set size. */
+.toolbar .toolbar-bar #toolbar-item-administration-tray .toolbar-logo img.toolbar-icon-home {
+  max-width: 50px !important;
+  max-height: 80px;
+  margin: 0 auto !important;
+}
