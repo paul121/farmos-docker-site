@@ -1,5 +1,23 @@
 # farmos-docker-site
+
 An example repository for maintaining a farmOS docker image of a custom site.
+
+- Builds custom farmOS codebase into a docker image using Composer.
+  - *TODO: example including Drupal module from (private?) external repository.*
+  - Deploy the custom-built farmOS site from a docker image!
+- Demonstrates a method of config management.
+- *TODO: include example/script to export and import from DB.*
+- *TODO: include Tugboat config.yml, demo workflow.*
+- Includes automated GitHub Actions:
+  - Run phpcs on `web/modules/custom`
+  - *TODO: run phpunit on `web/modules/custom`.*
+  - Builds and pushes docker images:
+    - Pushes to the `2.x` branch creates images tagged with `2.x-dev` and the
+      commit `sha`.
+    - Pushed tags creates images tagged with `2.x`, the `tag` and the commit
+      `sha`.
+    - Images are pushed to the GitHub Container Registry [here](https://github.com/users/paul121/packages/container/package/farmos-docker-site)
+    - *TODO: example for pushing to other (private?) container registries.*
 
 ## Development
 
