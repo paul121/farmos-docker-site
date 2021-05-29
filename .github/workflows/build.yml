@@ -3,12 +3,14 @@ name: Build image
 on:
   push:
     branches:
-      - '2.x'
+      - '*'
 
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Get branch name.
+        run: echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
       -
         name: Login to GitHub Docker Registry
         uses: docker/login-action@v1
@@ -22,7 +24,20 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: docker/dev/Dockerfile
-          push: true
+          load: true
           tags: |
             ghcr.io/${{ github.repository }}:2.x-dev
             ghcr.io/${{ github.repository }}:${{ github.sha }}
+      -
+        name: Start container
+        run: docker run -d --name www ghcr.io/${{ github.repository }}:2.x-dev
+      -
+        name: Run PHP CodeSniffer
+        run: docker exec -u www-data www phpcs /opt/drupal/web/modules/custom
+      -
+        name: Push image if on the 2.x branch.
+        if: ${{ env.BRANCH == '2.x' }}
+        run: |
+          docker push ghcr.io/${{ github.repository }}:2.x-dev
+          docker push ghcr.io/${{ github.repository }}:${{ github.sha }}
+
