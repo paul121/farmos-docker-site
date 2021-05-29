@@ -1,0 +1,31 @@
+name: Build image
+
+on:
+  push:
+    tags:
+      - '2.*'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get tag name.
+        run: echo "TAG=${GITHUB_REF:10}" >> $GITHUB_ENV
+      -
+        name: Login to GitHub Docker Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      -
+        name: Build and push image.
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          file: docker/Dockerfile
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ env.TAG }}
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
