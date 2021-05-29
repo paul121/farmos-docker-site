@@ -1,0 +1,16 @@
+uuid: 7f471e31-a976-4b44-9833-7d834784defd
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_land_types
+_core:
+  default_config_hash: F6v1dd-P3vASS4hXzZlriOoFTlH-vovwQvBDSUffo4c
+id: land_type_landmark
+color: orange
+conditions:
+  asset_type:
+    - land
+  land_type:
+    - landmark

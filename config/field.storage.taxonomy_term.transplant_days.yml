@@ -1,0 +1,25 @@
+uuid: 4d094a98-fdaa-4305-91d0-9aa35e955247
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_plant
+  module:
+    - taxonomy
+_core:
+  default_config_hash: OsUidiR4bbqDenDhmk1T7QYOfpHdr1Ni6IRQbCxw67M
+id: taxonomy_term.transplant_days
+field_name: transplant_days
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: true
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

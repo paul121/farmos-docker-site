@@ -1,0 +1,16 @@
+uuid: 7a3d5563-0004-4b58-aed0-367bbf6580e5
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_structure_types
+_core:
+  default_config_hash: GL6H3oWKAUgJgG0b33yS5BXLVATYUHSxtIB34eIb51s
+id: structure_type_building
+color: red
+conditions:
+  asset_type:
+    - structure
+  structure_type:
+    - building

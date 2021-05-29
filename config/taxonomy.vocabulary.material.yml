@@ -1,0 +1,13 @@
+uuid: c39a9a43-565f-45f0-9576-e6bb56ce7af9
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_material
+_core:
+  default_config_hash: 4YvENDxMFa4LrXUy9vA61H2wHoYnV85GUz89go61FPI
+name: Materials
+vid: material
+description: 'A list of materials.'
+weight: 0

@@ -1,0 +1,14 @@
+uuid: c644c60e-d923-4744-bc18-74cf5f704233
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_animal
+      - farm_id_tag
+_core:
+  default_config_hash: JRV0lEvaou8IzoIa6iQ4D63HyacBXeiMHaQLTjtvuHI
+id: tattoo
+label: Tattoo
+bundles:
+  - animal

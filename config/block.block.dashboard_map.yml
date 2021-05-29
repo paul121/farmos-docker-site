@@ -1,0 +1,26 @@
+uuid: f55b3be0-4761-4245-b8b4-4d5e16191c72
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - farm_dashboard
+  module:
+    - farm_map
+  theme:
+    - claro
+_core:
+  default_config_hash: wXrR_1bVrmz_Ef9GUVD_c-mDBQYdABv0oVwOYi9V4PA
+id: dashboard_map
+theme: claro
+region: content
+weight: -100
+provider: null
+plugin: map_block
+settings:
+  id: dashboard_map
+  label: 'Dashboard map'
+  provider: farm_dashboard
+  label_display: '0'
+  map_type: dashboard
+visibility: {  }

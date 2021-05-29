@@ -1,0 +1,14 @@
+uuid: 7a1e538d-bab4-457a-ae0c-07d65175f014
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_plant
+_core:
+  default_config_hash: nEb9VxcQS3R6FqHEQvNs-GZXei8EloKQ5nXI_uUjYOY
+id: plant
+label: Plant
+description: ''
+workflow: asset_default
+new_revision: true

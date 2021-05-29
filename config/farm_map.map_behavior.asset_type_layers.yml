@@ -1,0 +1,14 @@
+uuid: 61c8aedc-1531-4439-b22f-ae8f6fd894b1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_ui_map
+_core:
+  default_config_hash: m7Q5A0__oWBKDymOq087_8M5RimOV8rjfbKds6-VCuI
+id: asset_type_layers
+label: 'Asset type layers'
+description: 'Displays asset geometries in layers by asset type.'
+library: farm_ui_map/behavior_asset_type_layers
+settings: {  }

@@ -1,0 +1,13 @@
+uuid: f069844d-d067-4260-935b-c88cc15edbf0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_unit
+_core:
+  default_config_hash: uVfX66yS310ReWB9XGlDTOwBmSKVMxcKi51yWOnT3p8
+name: Units
+vid: unit
+description: 'A list of units for measurement purposes.'
+weight: 0

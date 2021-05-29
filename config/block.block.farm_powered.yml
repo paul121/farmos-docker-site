@@ -1,0 +1,22 @@
+uuid: 70402784-ddd9-4195-a650-3be70acb376a
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_ui_theme
+  theme:
+    - gin
+_core:
+  default_config_hash: ZEI8u8-SBeVt4t67IUR-16U5mmsCkztkOrfEn0GJwCA
+id: farm_powered
+theme: gin
+region: content
+weight: 1000
+provider: null
+plugin: farm_powered_by_block
+settings:
+  id: farm_powered_by_block
+  label: 'Powered by farmOS'
+  provider: farm
+  label_display: '0'
+visibility: {  }

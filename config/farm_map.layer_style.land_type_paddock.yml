@@ -1,0 +1,16 @@
+uuid: 7a47af2c-9df4-40c5-b2ff-fb7696cf5b25
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_land_types
+_core:
+  default_config_hash: KJYrpeZvygy253b7PLkzHIAOanox1prYEFpir7pIrs0
+id: land_type_paddock
+color: darkgreen
+conditions:
+  asset_type:
+    - land
+  land_type:
+    - paddock

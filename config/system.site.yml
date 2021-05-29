@@ -1,0 +1,14 @@
+uuid: 31e777c4-531f-469f-a392-d2d90acdb635
+name: Test
+mail: paul.weidner@gmail.com
+slogan: ''
+page:
+  403: /403
+  404: ''
+  front: /dashboard
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

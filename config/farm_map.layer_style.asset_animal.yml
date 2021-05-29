@@ -1,0 +1,14 @@
+uuid: 669df94e-51d9-476d-960d-30f08def064a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_animal
+_core:
+  default_config_hash: xXqKQ6-iztMz3C9i_mUrYJLDAECBhrMVWYevvCe4Cqk
+id: asset_animal
+color: orange
+conditions:
+  asset_type:
+    - animal

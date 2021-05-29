@@ -1,0 +1,14 @@
+uuid: d00779c2-9e18-4920-b01d-0d8a093a973d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_plant
+_core:
+  default_config_hash: 6Tk-XUh7XAkVpTf4eaNk_lGc569a7jrep1-jj6OjHuw
+id: asset_plant
+color: green
+conditions:
+  asset_type:
+    - plant

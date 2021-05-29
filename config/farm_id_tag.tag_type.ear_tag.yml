@@ -1,0 +1,14 @@
+uuid: 33a9ae65-cb16-418f-9db0-d7dd9578ed4b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_animal
+      - farm_id_tag
+_core:
+  default_config_hash: F4lthVVGEm7My5LevXxdou1HeIHfXkE3Z15ktogB2Lg
+id: ear_tag
+label: 'Ear tag'
+bundles:
+  - animal

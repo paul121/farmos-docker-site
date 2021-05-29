@@ -1,0 +1,11 @@
+uuid: a6742f3d-5607-4de2-aaae-4a3d10033d79
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_land_types
+_core:
+  default_config_hash: VGHHvg1lE4mg8iDtKMz8z2iavoX2bvYBY_P-KZf7xoI
+id: bed
+label: Bed

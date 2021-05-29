@@ -1,0 +1,14 @@
+uuid: b4a88eb3-7ddf-48af-831d-a862af088ca2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_water
+_core:
+  default_config_hash: xwtOA-CEWdo1jFJEy6DqLR-lEN05sGX6J-wG-dtG-tI
+id: asset_water
+color: blue
+conditions:
+  asset_type:
+    - water

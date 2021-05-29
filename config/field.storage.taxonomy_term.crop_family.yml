@@ -1,0 +1,24 @@
+uuid: 28261a5f-4690-4b54-a94a-4e425ef41648
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_plant
+  module:
+    - taxonomy
+_core:
+  default_config_hash: VrE-Qr2qFF5TMwJnfeVODQkcZg9btBjF5M2Y75L30l0
+id: taxonomy_term.crop_family
+field_name: crop_family
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

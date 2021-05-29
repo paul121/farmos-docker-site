@@ -1,0 +1,13 @@
+uuid: 4e5db697-1f31-4753-9646-e670e7f888d3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_plant
+_core:
+  default_config_hash: fzZXnNmn3Hr2eYiI2OyJUd5YQJyikKTENhG8SNzTtDU
+name: 'Plant types'
+vid: plant_type
+description: 'A list of crops/varieties.'
+weight: 0

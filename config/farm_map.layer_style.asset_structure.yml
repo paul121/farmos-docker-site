@@ -1,0 +1,14 @@
+uuid: e891f74c-6955-4e2a-b734-ae1a6f850115
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_structure
+_core:
+  default_config_hash: 0OjFxfek3iVBH9KPGS6EZHwAPfW8ch-A5_iPgtZLL6s
+id: asset_structure
+color: red
+conditions:
+  asset_type:
+    - structure

@@ -1,0 +1,16 @@
+uuid: 9cab846e-a105-4cfd-a68b-22c697c9cdb1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_land_types
+_core:
+  default_config_hash: bXW-1ws0PT11LgeYA2mzS-fqf41BXVYJR9els0EAQaQ
+id: land_type_bed
+color: green
+conditions:
+  asset_type:
+    - land
+  land_type:
+    - bed

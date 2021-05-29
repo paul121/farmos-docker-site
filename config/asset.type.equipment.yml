@@ -1,0 +1,14 @@
+uuid: 50acd36c-5ae4-4aa1-84d7-3fa7c7c3d917
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_equipment
+_core:
+  default_config_hash: S5GHEzTS7SNQAVjc14S8LGI_zXwalGKCYqoDaJDaY7g
+id: equipment
+label: Equipment
+description: ''
+workflow: asset_default
+new_revision: true

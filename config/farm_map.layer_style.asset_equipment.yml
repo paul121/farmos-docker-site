@@ -1,0 +1,14 @@
+uuid: 0dc4814a-d159-4487-96b0-b3c015233091
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_equipment
+_core:
+  default_config_hash: l6OAJtElFWCPwxVu6A_yASfp5ud8_A6V2i40Jsg8c1Q
+id: asset_equipment
+color: orange
+conditions:
+  asset_type:
+    - equipment

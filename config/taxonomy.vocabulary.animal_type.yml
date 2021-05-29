@@ -1,0 +1,13 @@
+uuid: b34d991c-ab5a-4b08-9de8-d031a94a1755
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_animal
+_core:
+  default_config_hash: 6Otp1P9HVI2CcdSs6OZ_TjjUpD2LQ6joCezO66NZego
+name: 'Animal types'
+vid: animal_type
+description: 'A list of animal species/breeds.'
+weight: 0

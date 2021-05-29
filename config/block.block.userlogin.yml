@@ -1,0 +1,25 @@
+uuid: 849b0209-7bc6-4b85-9f78-43e342ce89fc
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - farm_ui_user
+  module:
+    - user
+  theme:
+    - gin
+_core:
+  default_config_hash: 98GSoo-IxkjV-prac_-dlgj9Aai4TaNuLZTztoaIRIc
+id: userlogin
+theme: gin
+region: content
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: '0'
+visibility: {  }

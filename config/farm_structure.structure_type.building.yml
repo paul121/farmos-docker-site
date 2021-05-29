@@ -1,0 +1,11 @@
+uuid: 73c6ad34-36e9-4c82-aa7a-b6c194a02bab
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_structure_types
+_core:
+  default_config_hash: 4U_VjF5LFkWyMUUsd0bxMu6JYaGHyxYovzLbpVGjcV4
+id: building
+label: Building

@@ -1,0 +1,13 @@
+uuid: 39d9cdb1-38f3-4739-b685-37739f2734ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - log
+_core:
+  default_config_hash: 4tWKqS4kzRbFclLm2OmfeYMAHbDTQ3Ss5faCxxlbRgk
+id: log_mark_as_pending_action
+label: 'Mark as pending'
+type: log
+plugin: log_mark_as_pending_action
+configuration: {  }

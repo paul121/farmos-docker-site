@@ -1,0 +1,11 @@
+uuid: 1537fd41-c907-4fdf-ab5f-af7ba89f257a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_land_types
+_core:
+  default_config_hash: fqNykVVlKJ6xeUD9Rl085nvgYdGwQm9RohnYKYkVY54
+id: paddock
+label: Paddock

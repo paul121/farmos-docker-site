@@ -1,0 +1,28 @@
+uuid: 97a17d24-2c2d-41f9-88bf-5b23cf32ca4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.transplant_days
+    - taxonomy.vocabulary.plant_type
+  enforced:
+    module:
+      - farm_plant
+_core:
+  default_config_hash: Wz-6sQAbL8eCThZC9l9Edq8GLrcdpXFjCpZq-nK2F-o
+id: taxonomy_term.plant_type.transplant_days
+field_name: transplant_days
+entity_type: taxonomy_term
+bundle: plant_type
+label: 'Days to transplant'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' day|days'
+field_type: integer
