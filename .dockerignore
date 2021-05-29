@@ -10,3 +10,6 @@
 !web/modules/
 web/modules/*
 !web/modules/custom/
+
+# Include config.
+!config/
