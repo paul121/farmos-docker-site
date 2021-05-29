@@ -24,4 +24,5 @@ RUN composer clear-cache
 USER root
 RUN cp -rp /var/farmOS /opt/drupal
 
+WORKDIR /opt/drupal
 CMD ["apache2-foreground"]
