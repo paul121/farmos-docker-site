@@ -1,0 +1,13 @@
+db
+vendor
+keys
+
+# Ignore all web directories except for web/modules/custom/
+web/*
+!web/modules/
+web/modules/*
+!web/modules/custom/
+
+.idea
+.editorconfig
+.gitattributes
