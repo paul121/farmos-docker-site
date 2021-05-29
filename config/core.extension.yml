@@ -19,6 +19,7 @@ module:
   farm_activity: 0
   farm_animal: 0
   farm_api: 0
+  farm_custom: 0
   farm_dashboard: 0
   farm_entity: 0
   farm_equipment: 0
