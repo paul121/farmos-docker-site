@@ -38,7 +38,7 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
       -
         name: Start container
-        run: docker run -d --name www ghcr.io/${{ github.repository }}:2.x-dev
+        run: docker run -d --name www ${{ env.IMAGE_NAME }}:2.x-dev
       -
         name: Run PHP CodeSniffer
         run: docker exec -u www-data www phpcs /opt/drupal/web/modules/custom
@@ -46,6 +46,6 @@ jobs:
         name: Push image if on the 2.x branch.
         if: ${{ env.BRANCH == '2.x' }}
         run: |
-          ${{ env.IMAGE_NAME }}:2.x-dev
-          ${{ env.IMAGE_NAME }}:${{ github.sha }}
+          docker push ${{ env.IMAGE_NAME }}:2.x-dev
+          docker push ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
