@@ -17,6 +17,9 @@ jobs:
         name: Login to GitHub Docker Registry
         uses: docker/login-action@v1
         with:
+          # Change these values to use a different Docker registry.
+          # Include credentials as secrets in the GitHub repository settings eg: secrets.REGISTRY_PASS
+          # And change the base of the image name according to the registry (see above)
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}

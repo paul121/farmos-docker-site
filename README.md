@@ -17,7 +17,7 @@ An example repository for maintaining a farmOS docker image of a custom site.
     - Pushed tags creates images tagged with `2.x`, the `tag` and the commit
       `sha`.
     - Images are pushed to the GitHub Container Registry [here](https://github.com/users/paul121/packages/container/package/farmos-docker-site)
-    - *TODO: example for pushing to other (private?) container registries.*
+    - Example for pushing to other Docker container registries.
 
 ## Development
 
