@@ -1,3 +1,6 @@
+# The following comment is required to use secrets in the Dockerfile.
+#syntax=docker/dockerfile:1.2
+
 # Inherit from the farmOS 2.x-dev image on Docker Hub.
 FROM farmos/farmos:2.x-dev
 
@@ -8,6 +11,11 @@ COPY --chown=www-data:www-data . .
 
 # Install composer as the www-data user.
 USER www-data
+
+# Configure composer to use a github access token for accessing private repos.
+#RUN --mount=type=secret,id=github_access_token,uid=1000 \
+#  composer config github-oauth.github.com $(cat /run/secrets/github_access_token)
+
 RUN composer config cache-dir /var/www/.composer
 RUN composer install
 RUN composer clear-cache

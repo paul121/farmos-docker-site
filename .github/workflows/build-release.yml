@@ -25,6 +25,9 @@ jobs:
         with:
           file: docker/Dockerfile
           push: true
+          # Optionally provide secrets to the Dockerfile.
+#          secrets: |
+#            "github_access_token=${{ secrets.GH_ACCESS_TOKEN }}"
           tags: |
             ghcr.io/${{ github.repository }}:2.x
             ghcr.io/${{ github.repository }}:${{ env.TAG }}

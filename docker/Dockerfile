@@ -12,6 +12,10 @@ RUN rm -r /opt/drupal /var/farmOS/* && chown www-data:www-data /var/farmOS
 WORKDIR /var/farmOS
 COPY --chown=www-data:www-data . .
 
+# Configure composer to use a github access token for accessing private repos.
+#RUN --mount=type=secret,id=github_access_token,uid=1000 \
+#  composer config github-oauth.github.com $(cat /run/secrets/github_access_token)
+
 # Install composer.
 RUN composer config cache-dir $(mktemp -d)
 RUN composer install --no-dev

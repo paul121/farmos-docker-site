@@ -3,7 +3,7 @@
 An example repository for maintaining a farmOS docker image of a custom site.
 
 - Builds custom farmOS codebase into a docker image using Composer.
-  - *TODO: example including Drupal module from (private?) external repository.*
+  - Example configuration to authenticate composer with private repository.
   - Deploy the custom-built farmOS site from a docker image!
 - Demonstrates a method of config management.
 - *TODO: include example/script to export and import from DB.*
